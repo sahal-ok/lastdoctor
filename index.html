@@ -4,129 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doctor Directory</title>
-
-  <style>
-    /*poda myre*/
-    body {
-      font-family: Arial, sans-serif;
-      background: #f3f4f7;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background: #007bff;
-      color: #fff;
-      padding: 15px;
-      text-align: center;
-      font-size: 22px;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #aaa;
-      border-radius: 5px;
-      margin-bottom: 15px;
-      font-size: 16px;
-    }
-
-    .category {
-      margin-top: 30px;
-      background: #fff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      margin: 0;
-      color: #333;
-      cursor: pointer;
-    }
-
-    ul {
-      margin-top: 10px;
-      padding-left: 20px;
-      display: none;
-    }
-
-    .doctor {
-      margin: 6px 0;
-      font-size: 16px;
-    }
-
-    .doctor span {
-      display: block;
-      color: #555;
-      font-size: 14px;
-    }
-     /* Footer Style */
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      font-size: 14px;
-    }
-
-    footer a {
-      color: #00e1ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
- .whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
-    text-decoration: none;
-    z-index: 1000;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .whatsapp-float:hover {
-    transform: scale(1.08);
-  }
-
-  .whatsapp-float img {
-    width: 32px;
-    height: 32px;
-  }
-
-  /* On very small mobile screens, reduce button size */
-  @media (max-width: 420px) {
-    .whatsapp-float {
-      width: 50px;
-      height: 50px;
-      bottom: 15px;
-      right: 15px;
-    }
-    .whatsapp-float img {
-      width: 26px;
-      height: 26px;
-    }
-  }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -158,7 +36,8 @@
       </h2>
       <ul>
         <li class="doctor"><b>  TP jawad </b> <span>Counselling Psychologist, CBT Expert</span><span>calicut</span><span> phone : 9037984556</span></li>
-       
+        <li class="doctor"><b>dr. Dr. Thalhath P</b><span>Counselling Psychologist, CBT Expert</span><span>
+Kalamassery, Ernakulam</span></li>
       </ul>
     </div>
 
@@ -206,6 +85,11 @@
           <span>calicut</span>
           <span>phone number: </span>
         </li>
+        <li class="doctor"><b>Dr. vinod   </b> 
+          <span>MBBS,DVD,DNB,MNAMS,FIMSA,FRCP,FAAD</span>
+          <span>muvatupuzha</span>
+          <span>phone number: </span>
+        </li>
       </ul>
     </div>
 
@@ -216,6 +100,11 @@
         <li class="doctor"><b>Dr. Manoj kollara </b> 
           <span>MBBS ,MD</span>
           <span>place:</span>
+          <span>phone number:93</span>
+        </li>
+        <li class="doctor"><b>Dr. dharmaraj  </b> 
+          <span>MBBS ,MD</span>
+          <span>place:Neyyattinkara, Kerala</span>
           <span>phone number:93</span>
         </li>
         
@@ -231,7 +120,17 @@
         </li>
         
     </div>
-
+       <!-- neuro/brain -->
+    <div class="category">
+      <h2 onclick="toggle(this)">neurologist </h2>
+      <ul>
+        <li class="doctor"><b>Dr. jebin jhon jecob  </b> 
+          <span>MBBS ,MD</span>
+          <span>place: kottayam</span>
+          <span>phone number:93</span>
+        </li>
+        
+    </div>
        <!-- Liver/hepatologist -->
     <div class="category">
       <h2 onclick="toggle(this)">Liver</h2>
