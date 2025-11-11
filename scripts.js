@@ -11,7 +11,7 @@
         item.style.display = item.innerText.toLowerCase().includes(search) ? "block" : "none";
       });
     });
-    fetch("https://api.countapi.xyz/hit/lastdr.com/visits")
+    fetch("https://api.countapi.xyz/hit/www.lastdr.com/visits")
       .then(res => res.json())
       .then(res => {
         document.getElementById("count").innerText = res.value;
