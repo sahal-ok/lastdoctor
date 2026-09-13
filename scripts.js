@@ -277,7 +277,8 @@ document.addEventListener("DOMContentLoaded", () => {
           const formattedDisplay = formatPhoneNumber(rawPhone);
           return `
             <a href="tel:+91${cleanDigits}" class="phone-badge-link" title="Direct call to ${doc.name}">
-              <i class="fa-solid fa-phone"></i> ${formattedDisplay}
+              <i class="fa-solid fa-phone"></i>
+              <span>Call: ${formattedDisplay}</span>
             </a>
           `;
         })
