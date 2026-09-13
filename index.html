@@ -3,200 +3,270 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctor Directory</title>
-<link rel="stylesheet" href="style.css">
+  <title>Last Doctor | Curated Specialist Doctor Directory in Kerala</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Find Kerala's most trusted, peer-recommended specialist doctors in Gastroenterology, Psychology, Dermatology, Liver/Hepatology, Neurology, and more. Stop doctor hopping." />
+  <meta name="keywords" content="Kerala doctors, Calicut specialists, Kochi doctors, best gastroenterologist in kerala, dermatologist calicut, liver doc kerala, neurologist kochi" />
+  <meta name="author" content="Sahal OK" />
+  <meta name="theme-color" content="#0284c7" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>" />
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lastdr.com/" />
+  <meta property="og:title" content="Last Doctor | Verified Specialist Doctor Directory in Kerala" />
+  <meta property="og:description" content="A curated directory of peer-recommended specialists across Kerala so you don't have to keep searching." />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header> last dr - </header>
-  <header style="margin-top: 2px;"> you dont need to go to another doctor</header>
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Ddoctors%2Bbanner&psig=AOvVaw2uzlbGwBfoDDqA8xdG4MhY&ust=1762789365951000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDFsqS05ZADFQAAAAAdAAAAABAE"
-     alt="Doctors"
-     style="width:180px; border-radius:10px;">
-
-  <div class="container">
-    <input type="text" id="search" placeholder="Search doctors...">
-
-    <!-- Gastroentrology -->
-    <div class="category">
-      <h2 onclick="toggle(this)">stomech / gastroentrology</h2>
-      <ul>
-        <li class="doctor"><b>Dr. mohammed k,md ,dm</b> <span>MBBS, MD dm gastroentrology, senior consultant, experience</span><span>calicut</span><span> phone : 8089 7366 90,8089 4848 43</span></li>
-        <li class ="doctor"><b>dr. Varghese Thomas </b> <span>MD, former professor and head calicut medical college </span><span>calicut</span><span>944 737 88 77,0495 2377877</span></li>
-    </div>
-
-    <!-- Psychology -->
-    <div class="category">
-      <h2 onclick="toggle(this)">Psychology
-        <a href="https://whatsapp.com/channel/0029Vb7B0eDL2ATyKEjfJA0A"
-        target="_blank"
-        onclick="event.stopPropagation()"
-        style="padding:4px 8px; background:#25d366; color:white; border-radius:6px; font-size:14px; text-decoration:none;">
-        Join Group
-         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-         style="width:22px; height:22px; cursor:pointer;">
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" aria-label="LastDoctor Home">
+        <div class="brand-icon-wrap">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Last<span>Dr</span>.com</span>
+          <span class="brand-tagline">Kerala's Curated Specialist Directory</span>
+        </div>
       </a>
-      </h2>
-      <ul>
-        <li class="doctor"><b>  TP jawad </b> <span>Counselling Psychologist, CBT Expert</span><span>calicut</span><span> phone : 9037984556</span></li>
-        <li class="doctor"><b>dr. Dr. Thalhath P</b><span>Counselling Psychologist, CBT Expert</span><span>
-Kalamassery, Ernakulam</span></li>
-      </ul>
-    </div>
 
-    <!-- Psychiatry -->
-    <div class="category">
-      <h2 onclick="toggle(this)">Psychiatry
-        
-      <a href="https://whatsapp.com/channel/0029Vb7B0eDL2ATyKEjfJA0A"
-        target="_blank"
-        onclick="event.stopPropagation()"
-        style="padding:4px 8px; background:#25d366; color:white; border-radius:6px; font-size:14px; text-decoration:none;">
-        Join Group
-         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-         style="width:22px; height:22px; cursor:pointer;">
-      </a>
-      </h2>
-      <ul>
-        <li class="doctor"><b>Dr. Arun Gopalakrishnan</b> <span>MD Psychiatry, Depression & Anxiety Specialist</span><span>calicut</span><span>phone number: 7907755471</span></li>
-        
-      </ul>
+      <div class="nav-actions">
+        <a href="https://chat.whatsapp.com/LaDx7XMrmTG7TcnOH2KYrM" 
+           class="btn-nav-community" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Join Community</span>
+        </a>
+      </div>
     </div>
+  </header>
 
-    <!-- ENT -->
-    <div class="category">
-      <h2 onclick="toggle(this)">ENT</h2>
-      <ul>
-        <li class="doctor"><b>Dr.  subair VC</b> 
-          <span>MBBS,MS ENT specilist</span>
-          <span>kondotty,malappuram</span>
-          <span>phone number: 9633 89 89 94</span></li>
-        
-      </ul>
-    </div>
-       <!-- Skin/dermatotolgy -->
-    <div class="category">
-      <h2 onclick="toggle(this)">SKIN</h2>
-      <ul>
-        <li class="doctor"><b>Dr. K Muhammed </b> 
-          <span>MBBS,DVD,DNB,MNAMS,FIMSA,FRCP,FAAD,(former professor & HOD of Dermatology & venerology Govt. medical college Kozhikkode)</span>
-          <span>calicut</span>
-          <span>phone number:9746 83 66 83</span>
-        </li>
-        <li class="doctor"><b>Dr. Pavithran K  </b> 
-          <span>MBBS,DVD,DNB,MNAMS,FIMSA,FRCP,FAAD</span>
-          <span>calicut</span>
-          <span>phone number: </span>
-        </li>
-        <li class="doctor"><b>Dr. vinod   </b> 
-          <span>MBBS,DVD,DNB,MNAMS,FIMSA,FRCP,FAAD</span>
-          <span>muvatupuzha</span>
-          <span>phone number: </span>
-        </li>
-      </ul>
-    </div>
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <i class="fa-solid fa-certificate"></i> Verified & Peer-Recommended Doctors in Kerala
+      </div>
 
-         <!-- kids/pediatrics -->
-    <div class="category">
-      <h2 onclick="toggle(this)">Pediatrics</h2>
-      <ul>
-        <li class="doctor"><b>Dr. Manoj kollara </b> 
-          <span>MBBS ,MD</span>
-          <span>place:</span>
-          <span>phone number:93</span>
-        </li>
-        <li class="doctor"><b>Dr. dharmaraj  </b> 
-          <span>MBBS ,MD</span>
-          <span>place:Neyyattinkara, Kerala</span>
-          <span>phone number:93</span>
-        </li>
-        
+      <h1 class="hero-title">
+        Find Your <span class="highlight">Last Doctor</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        A hand-curated directory of Kerala's most trusted specialists and senior consultants — so you don't have to keep searching from one clinic to another.
+      </p>
+
+      <!-- Search Box -->
+      <div class="search-wrapper">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Search by doctor name, specialty, hospital, or city (e.g. Calicut, Liver, Kochi)..." 
+            autocomplete="off"
+            aria-label="Search doctors by name or specialty"
+          />
+          <button type="button" id="clear-search-btn" class="clear-search-btn" aria-label="Clear search input">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <button type="button" class="search-submit-btn" aria-label="Search">
+            <span>Search</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Filter Pills -->
+      <div class="filter-chips-container" id="filter-chips">
+        <button type="button" class="filter-chip active" data-filter="all">
+          <i class="fa-solid fa-list-ul"></i> All Specialties
+        </button>
+        <button type="button" class="filter-chip" data-filter="Kozhikode">
+          <i class="fa-solid fa-location-dot"></i> Calicut
+        </button>
+        <button type="button" class="filter-chip" data-filter="Ernakulam">
+          <i class="fa-solid fa-location-dot"></i> Kochi / Ernakulam
+        </button>
+        <button type="button" class="filter-chip" data-filter="Malappuram">
+          <i class="fa-solid fa-location-dot"></i> Malappuram
+        </button>
+        <button type="button" class="filter-chip" data-filter="gastroenterology">
+          <i class="fa-solid fa-stethoscope"></i> Gastroenterology
+        </button>
+        <button type="button" class="filter-chip" data-filter="dermatology">
+          <i class="fa-solid fa-hand-sparkles"></i> Dermatology
+        </button>
+        <button type="button" class="filter-chip" data-filter="psychology">
+          <i class="fa-solid fa-brain"></i> Psychology
+        </button>
+        <button type="button" class="filter-chip" data-filter="hepatology">
+          <i class="fa-solid fa-heart-pulse"></i> Liver Care
+        </button>
+      </div>
+
+      <!-- Trust Metrics Bar -->
+      <div class="trust-stats-bar">
+        <div class="stat-item">
+          <i class="fa-solid fa-user-doctor"></i>
+          <span id="stat-doctors-count">20+ Doctors</span>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-notes-medical"></i>
+          <span id="stat-specialties-count">10+ Specialties</span>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>Direct Phone Access</span>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>100% Peer-Recommended</span>
+        </div>
+      </div>
     </div>
-          <!-- kids/pediatrics -->
-    <div class="category">
-      <h2 onclick="toggle(this)">orthopedic surgeon</h2>
-      <ul>
-        <li class="doctor"><b>Dr. pradosh  </b> 
-          <span>MBBS ,MD</span>
-          <span>place:</span>
-          <span>phone number:93</span>
-        </li>
-        
+  </section>
+
+  <!-- Main Directory Section -->
+  <main class="directory-section" id="directory">
+    <div class="container">
+      <div class="directory-header">
+        <div class="directory-title">
+          <i class="fa-solid fa-hospital"></i>
+          <span>Specialist Directory</span>
+          <span class="results-count-badge" id="results-count">Loading doctors...</span>
+        </div>
+
+        <div class="accordion-controls">
+          <button type="button" class="control-btn" id="expand-all-btn">
+            <i class="fa-solid fa-angles-down"></i> Expand All
+          </button>
+          <button type="button" class="control-btn" id="collapse-all-btn">
+            <i class="fa-solid fa-angles-up"></i> Collapse All
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Categories and Cards Container -->
+      <div id="directory-container" class="directory-container" role="region" aria-live="polite">
+        <!-- Rendered dynamically by scripts.js -->
+      </div>
     </div>
-       <!-- neuro/brain -->
-    <div class="category">
-      <h2 onclick="toggle(this)">Neurologist </h2>
-      <ul>
-        <li class="doctor"><b>Dr. jebin jhon jecob  </b> 
-          <span>MBBS ,MD</span>
-          <span>place: kottayam</span>
-          <span>phone number:93</span>
-        </li>
-        <li class="doctor"><b>Dr.Sreeram prasad  </b> 
-          <span>MBBS ,MD</span>
-          <span>place: pollepady,kochi,Ernakulam</span>
-          <span>phone number:944 744 9790</span>
-        </li>
-        
+  </main>
+
+  <!-- Community Banner Section -->
+  <section class="community-section" id="community">
+    <div class="container">
+      <div class="community-card">
+        <div class="community-content">
+          <h2>Join the LastDoctor Kerala Community</h2>
+          <p>
+            Share your consultation feedback, discuss doctor recommendations with other patients, and ask for trusted referrals in your district.
+          </p>
+        </div>
+        <div class="community-cta">
+          <a href="https://chat.whatsapp.com/LaDx7XMrmTG7TcnOH2KYrM" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-whatsapp-large">
+            <i class="fa-brands fa-whatsapp"></i> Join WhatsApp Group
+          </a>
+        </div>
+      </div>
     </div>
-       <!-- gynocologist/gyno -->
-    <div class="category">
-      <h2 onclick="toggle(this)">gynecologist </h2>
-      <ul>
-        <li class="doctor"><b>Dr. sreelatha warrier  </b> 
-          <span>MBBS ,MD</span>
-          <span>place: aluva,Ernakulam</span>
-          <span>phone number:7947120713</span>
-        </li>
-      
-        
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-branding">
+          <span class="brand-name">Last<span>Dr</span>.com</span>
+          <p class="footer-desc">
+            "You don't need to go to another doctor." An independent public initiative to help patients in Kerala find senior, peer-recommended medical specialists faster.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4>Communities</h4>
+            <ul>
+              <li>
+                <a href="https://chat.whatsapp.com/LaDx7XMrmTG7TcnOH2KYrM" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp Group
+                </a>
+              </li>
+              <li>
+                <a href="https://whatsapp.com/channel/0029Vb7B0eDL2ATyKEjfJA0A" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-bullhorn"></i> WhatsApp Channel
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Curator</h4>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/sahal-ok" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-linkedin"></i> Sahal OK
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/918089736690" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-comment-dots"></i> Suggest a Doctor
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">
+          <strong>Disclaimer:</strong> Information listed on LastDr.com is gathered from publicly available clinical details and patient peer recommendations. In case of an emergency, please visit the nearest hospital casualty immediately.
+        </p>
+
+        <div class="visitor-badge">
+          <i class="fa-solid fa-eye"></i> Visitors: <span id="visitor-count">2,480+</span>
+        </div>
+      </div>
     </div>
-       <!-- Liver/hepatologist -->
-    <div class="category">
-      <h2 onclick="toggle(this)">Liver</h2>
-      <ul>
-        <li class="doctor"><b>DR cyriac abby phillips </b> 
-          <span>MBBS,MD, rajagiri hospital</span>
-          <span> Edathala, near Aluva, in Ernakulam,</span>
-          <span>phone number: ---</span>
-          <span> problem: he get angry when you ask about ayurvedic</span>
-        </li>
-         <li class="doctor"><b>DR sudheendran </b> 
-          <span>MBBS,MD, Amrita hospital</span>
-          <span> kochi, in Ernakulam,</span>
-          <span>phone number: ---</span>
-          
-        
-          </li>
-         <li class="doctor"><b>DR ismail </b> 
-          <span>MBBS,MD, aster hospital</span>
-          <span></span>
-          <span>phone number: ---</span>
-        </li>
-         <li class="doctor"><b>DR Abhishek </b> 
-          <span>MBBS,MD, Lakeshore hospital</span>
-          <span></span>
-          <span>phone number: ---</span>
-        </li>
-      </ul>
-    </div>
-  <!-- ✅ Footer Section -->
-  <footer>
-    Built by <b>Sahal OK</b> | Visitors: <span id="count"></span>
-    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank">LinkedIn</a> |
-    <a href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp</a>
   </footer>
-  <!-- floting whatapp icon-->
-<a href="https://chat.whatsapp.com/LaDx7XMrmTG7TcnOH2KYrM"
-   class="whatsapp-float"
-   target="_blank"
-   aria-label="Join our WhatsApp group">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-</a>
-  </div>
 
-  
-<script src="scripts.js"></script>
-<script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://chat.whatsapp.com/LaDx7XMrmTG7TcnOH2KYrM" 
+     class="whatsapp-float-widget" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Join Kerala Doctor Discussion Group on WhatsApp">
+    <span class="whatsapp-float-tooltip">Join Doctor Community</span>
+    <div class="whatsapp-float-btn">
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+  </a>
+
+  <!-- Data and Application Scripts -->
+  <script src="doctors-data.js"></script>
+  <script src="scripts.js"></script>
+  <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
 </body>
 </html>
